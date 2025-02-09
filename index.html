@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Tracker</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Eco Tracker</h1>
+        
+        <div class="calculator">
+            <div class="input-group">
+                <label>Monthly Car Travel (km)</label>
+                <input type="number" id="carTravel" min="0" value="100">
+            </div>
+            <div class="input-group">
+                <label>Monthly Public Transport (km)</label>
+                <input type="number" id="publicTransport" min="0" value="50">
+            </div>
+            <button id="calculateBtn">Calculate Footprint</button>
+        </div>
+
+        <div class="results">
+            <div class="card">
+                <h3>Your Footprint</h3>
+                <p id="userFootprint">--</p>
+            </div>
+            <div class="card">
+                <h3>Local Average</h3>
+                <p id="localAverage">--</p>
+            </div>
+            <div class="card">
+                <h3>Air Quality</h3>
+                <p id="airQuality">--</p>
+            </div>
+            <div class="card">
+                <h3>Current Weather</h3>
+                <div id="weather">
+                    <img id="weatherIcon" src="" alt="Weather Icon">
+                    <p><span id="temperature">--</span>°C</p>
+                    <p id="weatherDescription">--</p>
+                    <p>Humidity: <span id="humidity">--</span>%</p>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="historyChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
