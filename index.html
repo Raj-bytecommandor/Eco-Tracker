@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,9 +48,32 @@
         </div>
 
         <canvas id="historyChart"></canvas>
+
+        <footer>
+            <p class="credit">Created by Raj with ❤️ | <a href="https://twitter.com/raj_av9" target="_blank">@raj_av9</a></p>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="app.js"></script>
+
+    <style>
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            color: #00ff7f;
+            font-size: 1rem;
+        }
+
+        .credit a {
+            color: #00e1ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .credit a:hover {
+            color: #ff4081;
+        }
+    </style>
 </body>
 </html>
